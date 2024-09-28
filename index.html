@@ -16,38 +16,43 @@
                 <a class="navbar-brand" href="#">
                     <img src="assets/logo.svg" alt="Logo" width="100" height="80"/>
                 </a>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link highlighted">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Safety</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Careers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Press</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn download-btn">Download App</button>
-                    </li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#responsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse response" id="responsive">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link highlighted" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#safety">Safety</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#impact">Impact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#review">Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://play.google.com/store/apps/details?id=com.rapido.passenger&af_xp=qr&pid=Home%20Page%20Download%20App%20Widget&c=hp_download_app_widget&is_retargeting=true&af_reengagement_window=30d"><button class="btn download-btn">Download App</button></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
     <section class="container-fluid">
         <div class="row">
-            <div class="col-lg-6 home">
+            <div class="col-lg-6 home" id="home">
                 <div>
                     <h1 class="fs-1">India's Largest Bike Taxi Service</h1>
                 <p class="fs-3">Rapido is India’s first and fastest-growing Bike taxi app with a whopping 25 Million+ app downloads. We are now running operations in more than 100 cities.</p>
@@ -68,14 +73,14 @@
     </section>
     <section class="container">
         <div class="row">
-            <a>
+            <a id="safety">
                 <img src="assets/safety_guideline.png" class="safety-img"/>
             </a>
         </div>
     </section>
     <section class="container know-us">
         <div class="row">
-            <div class="col-lg-6 left">
+            <div class="col-lg-6 left" id="about">
                 <div class="yellow-bg-container"></div>
                 <img src="assets/y_p.svg" class="dotted-img"/>
                 <div class="img-wrapper">
@@ -101,35 +106,35 @@
     </section>
     <section class="container">
         <div class="row">
-            <div class="impact-box">
+            <div class="impact-box" id="impact">
                 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 10px;">
                     <h1 class="fs-2">Our Impact</h1>
                     <div class="underline"></div>
                     <p class="fs-4">Our presence in the country has changed the concept of intra-city travel and made last-mile connectivity affordable for all.</p>
                 </div>
                 <div class="impact-items">
-                    <div class="card impact-item col-lg-3">
+                    <div class="card impact-item col-sm-6 col-lg-3">
                         <img src="assets/presence_1.webp" class="img-impact"/>
                         <div class="card-body">
                             <h5 class="fs-6">25 M</h5>
                             <p class="card-text">Downloads</p>
                         </div>
                     </div>
-                    <div class="card impact-item col-lg-3">
+                    <div class="card impact-item col-sm-6 col-lg-3">
                         <img src="assets/presence_2.webp" class="img-impact"/>
                         <div class="card-body">
                             <h5 class="fs-6">100+</h5>
                             <p class="card-text">Cities</p>
                         </div>
                     </div>
-                    <div class="card impact-item col-lg-3">
+                    <div class="card impact-item col-sm-6 col-lg-3">
                         <img src="assets/presence_3.webp" class="img-impact"/>
                         <div class="card-body">
                             <h5 class="fs-6">1+ M</h5>
                             <p class="card-text">Captains</p>
                         </div>
                     </div>
-                    <div class="card impact-item col-lg-3">
+                    <div class="card impact-item col-sm-6 col-lg-3">
                         <img src="assets/presence_4.webp" class="img-impact"/>
                         <div class="card-body">
                             <h5 class="fs-6">10+ M</h5>
@@ -142,7 +147,7 @@
     </section>
     <section class="container">
         <div class="row">
-            <div class="detail-section">
+            <div class="detail-section" id="blog">
                 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 10px;">
                     <h1 class="fs-2">What's in it for you</h1>
                     <div class="underline"></div>
@@ -154,21 +159,21 @@
                     </div>
                 </div>
                 <div class="detail-items row">
-                    <div class="card detail-item col-lg-3">
+                    <div class="card detail-item col-sm-12 col-lg-3">
                         <img src="assets/CCcare_1.webp" class="card-img-top"/>
                         <div class="card-body">
                             <h5 class="card-title">Doorstep Pick-Up</h5>
                             <p class="card-text">We will pick you up from where you are and drop you exactly where you need to be.</p>
                         </div>
                     </div>
-                    <div class="card detail-item col-lg-3">
+                    <div class="card detail-item col-sm-12 col-lg-3">
                         <img src="assets/CCcare_2.webp" class="card-img-top"/>
                         <div class="card-body">
                             <h5 class="card-title">Affordability</h5>
                             <p class="card-text">No more latent prices and shocked reactions after seeing the final ride cost. We're here with the most affordable rides for all.</p>
                         </div>
                     </div>
-                    <div class="card detail-item col-lg-3">
+                    <div class="card detail-item col-sm-12 col-lg-3">
                         <img src="assets/CCcare_3.webp" class="card-img-top"/>
                         <div class="card-body">
                             <h5 class="card-title">Quick Ride</h5>
@@ -196,7 +201,7 @@
                         </div>
                     </div>
                     <div id="#testimonials" class="carousel slide carousel-dark" data-bs-ride="carousel">
-                        <div class="carousel-inner row">
+                        <div class="carousel-inner row" id="review">
                             <div class="carousel-item active col-lg-6">
                                 <div class=" testimonial">
                                     <img src="assets/testimonial-1.png"/>
@@ -279,7 +284,7 @@
     <footer class="container-fluid ">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2">
+                <div class="col-lg-2" id="contact">
                     <p class="fs-5">Customer app</p>
                     <div>
                         <img src="assets/play_store.svg"/>
